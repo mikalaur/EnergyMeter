@@ -174,7 +174,7 @@ void updateInfo_mains()
   int textColor = WHITE;
   
   fillCable(200, 118, 70, 4, powerSensor[Mains].i, cableColor);
-  printValue(powerSensor[Mains].v, 210, 100, 2, 'V', true, 1, textColor, BLACK);
+  //printValue(powerSensor[Mains].v, 210, 100, 2, 'V', true, 1, textColor, BLACK);  // Not needed, same voltage as Load
   printValue(powerSensor[Mains].i, 210, 108, 2, 'A', true, 1, textColor, BLACK);
   printValue(powerSensor[Mains].p, 190, 126, 0, 'W', true, 2, textColor, BLACK);
 }

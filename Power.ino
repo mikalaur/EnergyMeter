@@ -20,8 +20,7 @@ bool initPowerSensor_Solar() {
   ina219[Solar].begin();
   if (!ina219[Solar].detect()) return false;
   ina219[Solar].configure(INA219::RANGE_32V, INA219::GAIN_4_160MV, INA219::ADC_128SAMP, INA219::ADC_128SAMP, INA219::CONT_SH_BUS);
-  ina219[Solar].calibrate(0.0100, 0.100, 32.0, 10.0);  
-                        //0.01002
+  ina219[Solar].calibrate(0.0100, 0.160, 32.0, 10.0);
   return true;                       
 }
 
